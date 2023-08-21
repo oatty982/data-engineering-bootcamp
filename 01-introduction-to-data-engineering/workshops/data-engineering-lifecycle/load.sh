@@ -1,7 +1,7 @@
 #!/bin/bash
 
-API_KEY='YOUR_API_KEY'
-COLLECTION_ID='YOUR_COLLECTION_ID'
+API_KEY='$2b$10$WGheK77igyrUGVA2hNgky./oe6dZBWJoOnw1SvmZv932Cq3fegWpG'
+COLLECTION_ID='64cdf95eb89b1e2299cbae09'
 
 curl -XPOST \
     -H "Content-type: application/json" \
