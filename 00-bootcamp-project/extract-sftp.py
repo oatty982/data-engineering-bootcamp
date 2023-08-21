@@ -16,12 +16,13 @@ port = parser.getint("sftp_config", "port")
 cnopts = pysftp.CnOpts()
 cnopts.hostkeys = None
 
-DATA_FOLDER = "data_sftp"
+DATA_FOLDER = "data"
 
 # โค้ดด้านล่างจะเป็นการโหลดไฟล์ orders.csv ซึ่งเป็นข้อมูล orders
 # ให้แก้โค้ดด้านล่างให้ไปโหลดไฟล์ข้อมูล products และ promos แทน
 files = [
-    "orders.csv",
+    "products.csv",
+    "promos.csv",
 ]
 with pysftp.Connection(host, username=username, password=password, port=port, cnopts=cnopts) as sftp:
     for f in files:
